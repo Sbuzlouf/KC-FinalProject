@@ -17,6 +17,7 @@
 		217DA20928BE2160000CC9B8 /* SideMenuHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217DA20828BE2160000CC9B8 /* SideMenuHeaderView.swift */; };
 		217DA20B28BE2183000CC9B8 /* SideMenuOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217DA20A28BE2183000CC9B8 /* SideMenuOptionView.swift */; };
 		217DA20D28BE21AF000CC9B8 /* SideMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217DA20C28BE21AF000CC9B8 /* SideMenuViewModel.swift */; };
+		6FCF290B28C27E0F0048CF19 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCF290A28C27E0F0048CF19 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		217DA20828BE2160000CC9B8 /* SideMenuHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuHeaderView.swift; sourceTree = "<group>"; };
 		217DA20A28BE2183000CC9B8 /* SideMenuOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuOptionView.swift; sourceTree = "<group>"; };
 		217DA20C28BE21AF000CC9B8 /* SideMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewModel.swift; sourceTree = "<group>"; };
+		6FCF290A28C27E0F0048CF19 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 			children = (
 				2161EEC828BDBF55005B60B5 /* NabtaApp.swift */,
 				2161EECA28BDBF55005B60B5 /* ContentView.swift */,
+				6FCF290928C27B5F0048CF19 /* Home */,
 				217DA20528BE1E0D000CC9B8 /* SideMenu */,
 				217DA20428BE1DF6000CC9B8 /* Login */,
 				2161EED828BDC16E005B60B5 /* Extentions */,
@@ -107,6 +110,14 @@
 				217DA20C28BE21AF000CC9B8 /* SideMenuViewModel.swift */,
 			);
 			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		6FCF290928C27B5F0048CF19 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				6FCF290A28C27E0F0048CF19 /* HomeView.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +196,7 @@
 				2161EEC928BDBF55005B60B5 /* NabtaApp.swift in Sources */,
 				217DA20D28BE21AF000CC9B8 /* SideMenuViewModel.swift in Sources */,
 				217DA20728BE2141000CC9B8 /* SideMenuView.swift in Sources */,
+				6FCF290B28C27E0F0048CF19 /* HomeView.swift in Sources */,
 				2161EEDA28BDC1A9005B60B5 /* Color+Extentions.swift in Sources */,
 				217DA20B28BE2183000CC9B8 /* SideMenuOptionView.swift in Sources */,
 			);
