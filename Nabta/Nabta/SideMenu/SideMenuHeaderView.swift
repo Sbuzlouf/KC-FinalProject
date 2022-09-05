@@ -27,7 +27,7 @@ struct SideMenuHeaderView: View {
             
             HStack {
                 VStack(alignment: .leading) {
-                    Image("nabta")
+                    Image("Nabta")
                         .resizable()
                         .scaledToFill()
                         .clipped()

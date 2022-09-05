@@ -1,16 +1,14 @@
 //
-//  Home.swift
+//  MainView.swift
 //  Nabta
 //
-//  Created by Sumaya Buzlouf on 02/09/2022.
+//  Created by Sumaya Buzlouf on 04/09/2022.
 //
 
 import SwiftUI
 
-struct Home: View {
-    
+struct MainView: View {
     @State private var isShowing = false
-    
     var body: some View {
         NavigationView {
             ZStack {
@@ -30,7 +28,7 @@ struct Home: View {
                         Image(systemName: "list.bullet")
                             .foregroundColor(.black)
                     }))
-                    .navigationTitle("HOME")
+                    .navigationTitle("Home")
             }
             .onAppear {
                 isShowing = false
@@ -39,9 +37,9 @@ struct Home: View {
     }
 }
 
-struct HomeView_Previews: PreviewProvider {
+struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        MainView()
     }
 }
 

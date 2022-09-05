@@ -17,7 +17,15 @@
 		217DA20928BE2160000CC9B8 /* SideMenuHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217DA20828BE2160000CC9B8 /* SideMenuHeaderView.swift */; };
 		217DA20B28BE2183000CC9B8 /* SideMenuOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217DA20A28BE2183000CC9B8 /* SideMenuOptionView.swift */; };
 		217DA20D28BE21AF000CC9B8 /* SideMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217DA20C28BE21AF000CC9B8 /* SideMenuViewModel.swift */; };
-		6FCF290B28C27E0F0048CF19 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCF290A28C27E0F0048CF19 /* HomeView.swift */; };
+		6F132C3428C502C600E4006C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F132C3328C502C600E4006C /* MainView.swift */; };
+		6F132C3E28C5196900E4006C /* MyPlants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F132C3D28C5196900E4006C /* MyPlants.swift */; };
+		6F132C4428C5389600E4006C /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F132C4328C5389600E4006C /* ImagePicker.swift */; };
+		6F132C4628C53AE600E4006C /* profileImageMod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F132C4528C53AE600E4006C /* profileImageMod.swift */; };
+		6F63693028C618C900865233 /* NewPlantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F63692F28C618C900865233 /* NewPlantView.swift */; };
+		6F63693628C61EF800865233 /* Water Measure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F63693528C61EF800865233 /* Water Measure.swift */; };
+		6F63693828C61F2400865233 /* Soil Measure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F63693728C61F2400865233 /* Soil Measure.swift */; };
+		6F63693A28C6308C00865233 /* MyTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F63693928C6308C00865233 /* MyTasks.swift */; };
+		6F63693C28C635E200865233 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F63693B28C635E200865233 /* Calendar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +40,15 @@
 		217DA20828BE2160000CC9B8 /* SideMenuHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuHeaderView.swift; sourceTree = "<group>"; };
 		217DA20A28BE2183000CC9B8 /* SideMenuOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuOptionView.swift; sourceTree = "<group>"; };
 		217DA20C28BE21AF000CC9B8 /* SideMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewModel.swift; sourceTree = "<group>"; };
-		6FCF290A28C27E0F0048CF19 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		6F132C3328C502C600E4006C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		6F132C3D28C5196900E4006C /* MyPlants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlants.swift; sourceTree = "<group>"; };
+		6F132C4328C5389600E4006C /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		6F132C4528C53AE600E4006C /* profileImageMod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileImageMod.swift; sourceTree = "<group>"; };
+		6F63692F28C618C900865233 /* NewPlantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlantView.swift; sourceTree = "<group>"; };
+		6F63693528C61EF800865233 /* Water Measure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Water Measure.swift"; sourceTree = "<group>"; };
+		6F63693728C61F2400865233 /* Soil Measure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Soil Measure.swift"; sourceTree = "<group>"; };
+		6F63693928C6308C00865233 /* MyTasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTasks.swift; sourceTree = "<group>"; };
+		6F63693B28C635E200865233 /* Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +83,7 @@
 			children = (
 				2161EEC828BDBF55005B60B5 /* NabtaApp.swift */,
 				2161EECA28BDBF55005B60B5 /* ContentView.swift */,
-				6FCF290928C27B5F0048CF19 /* Home */,
+				6F132C3228C502B500E4006C /* Main */,
 				217DA20528BE1E0D000CC9B8 /* SideMenu */,
 				217DA20428BE1DF6000CC9B8 /* Login */,
 				2161EED828BDC16E005B60B5 /* Extentions */,
@@ -108,16 +124,64 @@
 				217DA20828BE2160000CC9B8 /* SideMenuHeaderView.swift */,
 				217DA20A28BE2183000CC9B8 /* SideMenuOptionView.swift */,
 				217DA20C28BE21AF000CC9B8 /* SideMenuViewModel.swift */,
+				6F132C3C28C5194300E4006C /* Planties */,
+				6F63693328C61DDA00865233 /* Water+Soil */,
+				6F63693428C61DDE00865233 /* My Taskies */,
+				6F63693228C61DD500865233 /* Calendary */,
+				6F63693128C61DCA00865233 /* Shopping */,
 			);
 			path = SideMenu;
 			sourceTree = "<group>";
 		};
-		6FCF290928C27B5F0048CF19 /* Home */ = {
+		6F132C3228C502B500E4006C /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				6FCF290A28C27E0F0048CF19 /* HomeView.swift */,
+				6F132C3328C502C600E4006C /* MainView.swift */,
 			);
-			path = Home;
+			path = Main;
+			sourceTree = "<group>";
+		};
+		6F132C3C28C5194300E4006C /* Planties */ = {
+			isa = PBXGroup;
+			children = (
+				6F132C3D28C5196900E4006C /* MyPlants.swift */,
+				6F63692F28C618C900865233 /* NewPlantView.swift */,
+				6F132C4328C5389600E4006C /* ImagePicker.swift */,
+				6F132C4528C53AE600E4006C /* profileImageMod.swift */,
+			);
+			path = Planties;
+			sourceTree = "<group>";
+		};
+		6F63693128C61DCA00865233 /* Shopping */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Shopping;
+			sourceTree = "<group>";
+		};
+		6F63693228C61DD500865233 /* Calendary */ = {
+			isa = PBXGroup;
+			children = (
+				6F63693B28C635E200865233 /* Calendar.swift */,
+			);
+			path = Calendary;
+			sourceTree = "<group>";
+		};
+		6F63693328C61DDA00865233 /* Water+Soil */ = {
+			isa = PBXGroup;
+			children = (
+				6F63693528C61EF800865233 /* Water Measure.swift */,
+				6F63693728C61F2400865233 /* Soil Measure.swift */,
+			);
+			path = "Water+Soil";
+			sourceTree = "<group>";
+		};
+		6F63693428C61DDE00865233 /* My Taskies */ = {
+			isa = PBXGroup;
+			children = (
+				6F63693928C6308C00865233 /* MyTasks.swift */,
+			);
+			path = "My Taskies";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,12 +255,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F132C4628C53AE600E4006C /* profileImageMod.swift in Sources */,
 				217DA20928BE2160000CC9B8 /* SideMenuHeaderView.swift in Sources */,
+				6F63693A28C6308C00865233 /* MyTasks.swift in Sources */,
+				6F63693C28C635E200865233 /* Calendar.swift in Sources */,
+				6F63693828C61F2400865233 /* Soil Measure.swift in Sources */,
+				6F132C3428C502C600E4006C /* MainView.swift in Sources */,
 				2161EECB28BDBF55005B60B5 /* ContentView.swift in Sources */,
 				2161EEC928BDBF55005B60B5 /* NabtaApp.swift in Sources */,
+				6F132C3E28C5196900E4006C /* MyPlants.swift in Sources */,
 				217DA20D28BE21AF000CC9B8 /* SideMenuViewModel.swift in Sources */,
 				217DA20728BE2141000CC9B8 /* SideMenuView.swift in Sources */,
-				6FCF290B28C27E0F0048CF19 /* HomeView.swift in Sources */,
+				6F132C4428C5389600E4006C /* ImagePicker.swift in Sources */,
+				6F63693628C61EF800865233 /* Water Measure.swift in Sources */,
+				6F63693028C618C900865233 /* NewPlantView.swift in Sources */,
 				2161EEDA28BDC1A9005B60B5 /* Color+Extentions.swift in Sources */,
 				217DA20B28BE2183000CC9B8 /* SideMenuOptionView.swift in Sources */,
 			);
