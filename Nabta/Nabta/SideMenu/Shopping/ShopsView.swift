@@ -14,13 +14,33 @@ struct ShopsView: View {
     var shop: ShopViewModel
     
     var body: some View {
+        
+        
         ScrollView {
-            VStack {
-                Text("المشاتل")
-                    .font(.system(size: 45, weight: .black))
-                    .foregroundColor(.DarkSeaGreen)
-                    .padding()
-                
+            Text("مشاتل")
+                .font(.system(size: 45, weight: .black))
+                .foregroundColor(.DarkSeaGreen)
+                .padding()
+            ScrollView(.horizontal) {
+                HStack {
+                    Image("plant")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 280, height: 240)
+                        .cornerRadius(30)
+                        .padding()
+                        .shadow(radius: 4)
+                    
+                    Image("pots")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 280, height: 240)
+                        .cornerRadius(35)
+                        .shadow(radius: 4)
+                        .padding()
+                }//: HSTACK
+            }//: HSTACK
+            ScrollView {
                 ForEach(Shops){ shop in
                     HStack {
                         Button {
@@ -49,7 +69,7 @@ struct ShopsView: View {
                                 .frame(width: 150, alignment: .trailing)
                                 .foregroundColor(.gray)
                                 .padding(.trailing)
-                           
+                            
                             HStack {
                                 Text(String(format: "%.1f", shop.rate))
                                     .frame(width: 100, alignment: .trailing)
@@ -68,9 +88,9 @@ struct ShopsView: View {
                             .padding()
                         
                     }//: HSTACK
-                    .padding()
+                        .padding()
                 }//: FOREACH
-            }//: VSTACK
+            }//: SCROLLVIEW
         }//: SCROLLVIEW
     }
 }

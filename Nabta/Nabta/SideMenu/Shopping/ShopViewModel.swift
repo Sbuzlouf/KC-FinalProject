@@ -16,5 +16,7 @@ struct ShopViewModel: Identifiable {
 
 var Shops = [
     ShopViewModel(name: "مشاتل", country: "الكويت", rate: 4.9),
+    ShopViewModel(name: "مشاتل أبرار", country: "الكويت", rate: 3.5),
+    ShopViewModel(name: "نمو", country: "الرياض", rate: 4.0)
 ]
 
