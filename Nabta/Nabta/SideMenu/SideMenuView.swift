@@ -13,7 +13,7 @@ struct SideMenuView: View {
     
     var body: some View {
         ZStack {
-            LinearGradient(gradient: Gradient(colors: [Color.DarkSeaGreen, Color.MaximumYellowRed]), startPoint: .top, endPoint: .bottom)
+            LinearGradient(gradient: Gradient(colors: [Color.DarkSeaGreen, Color.DarkLava]), startPoint: .top, endPoint: .bottom)
                 .ignoresSafeArea()
             
             VStack {
@@ -21,7 +21,7 @@ struct SideMenuView: View {
                     .frame(height: 200)
                 
                 ForEach(SideMenuViewModel.allCases, id: \.self) { option in
-                    NavigationLink (destination: Text(option.list),
+                    NavigationLink (destination: option.view,
                         label: {
                         SideMenuOptionView(viewModel: option)
                         })

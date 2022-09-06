@@ -26,6 +26,7 @@
 		6F63693828C61F2400865233 /* Soil Measure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F63693728C61F2400865233 /* Soil Measure.swift */; };
 		6F63693A28C6308C00865233 /* MyTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F63693928C6308C00865233 /* MyTasks.swift */; };
 		6F63693C28C635E200865233 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F63693B28C635E200865233 /* Calendar.swift */; };
+		6F63693E28C67D5C00865233 /* ShopsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F63693D28C67D5C00865233 /* ShopsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		6F63693728C61F2400865233 /* Soil Measure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Soil Measure.swift"; sourceTree = "<group>"; };
 		6F63693928C6308C00865233 /* MyTasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTasks.swift; sourceTree = "<group>"; };
 		6F63693B28C635E200865233 /* Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
+		6F63693D28C67D5C00865233 /* ShopsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 		6F63693128C61DCA00865233 /* Shopping */ = {
 			isa = PBXGroup;
 			children = (
+				6F63693D28C67D5C00865233 /* ShopsView.swift */,
 			);
 			path = Shopping;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 				217DA20D28BE21AF000CC9B8 /* SideMenuViewModel.swift in Sources */,
 				217DA20728BE2141000CC9B8 /* SideMenuView.swift in Sources */,
 				6F132C4428C5389600E4006C /* ImagePicker.swift in Sources */,
+				6F63693E28C67D5C00865233 /* ShopsView.swift in Sources */,
 				6F63693628C61EF800865233 /* Water Measure.swift in Sources */,
 				6F63693028C618C900865233 /* NewPlantView.swift in Sources */,
 				2161EEDA28BDC1A9005B60B5 /* Color+Extentions.swift in Sources */,

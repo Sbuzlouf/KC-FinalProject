@@ -13,7 +13,6 @@ struct SideMenuHeaderView: View {
     
     var body: some View {
         ZStack(alignment: .topTrailing) {
-            
             Button (action: {
                 withAnimation(.spring()) {
                 isShowing.toggle()
@@ -26,7 +25,7 @@ struct SideMenuHeaderView: View {
             })
             
             HStack {
-                VStack(alignment: .leading) {
+                VStack() {
                     Image("Nabta")
                         .resizable()
                         .scaledToFill()

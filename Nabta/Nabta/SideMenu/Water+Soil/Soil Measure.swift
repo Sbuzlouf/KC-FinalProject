@@ -62,6 +62,7 @@ struct Soil_Measure: View {
                         .scaledToFit()
                         .frame(width: 50, height: 50)
                         .padding(40)
+                        .foregroundColor(.MaximumYellowRed)
                 }//: BUTTON
 
                 Text(String(format: "%.1f لتر", result))

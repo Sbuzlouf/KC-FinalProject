@@ -92,8 +92,9 @@ struct NewPlantView: View {
                     Image(systemName: "plus.circle.fill")
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 60, height: 60)
+                        .frame(width: 70, height: 70)
                         .padding()
+                        .foregroundColor(.DarkLava)
             })//: BUTTON
               Spacer()
             }.foregroundColor(.white)

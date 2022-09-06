@@ -34,7 +34,15 @@ enum SideMenuViewModel: Int, CaseIterable {
         case .shops: return "cart"
         }
     }
-    
+    var view: some View {
+        switch self {
+        case .myPlants: return MyPlants()
+        case .water: return WaterMeasure()
+        case .myTasks: return MyTasks()
+        case .calender: return Calendar()
+        case .shops: return ShopsView()
+        }
+    }
     
 }
 
