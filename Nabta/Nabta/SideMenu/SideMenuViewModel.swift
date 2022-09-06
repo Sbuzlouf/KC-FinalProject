@@ -24,7 +24,6 @@ enum SideMenuViewModel: Int, CaseIterable {
         case .shops: return "محــلات"
         }
     }
-    
     var images: String {
         switch self {
         case .myPlants: return "scanner"
@@ -36,11 +35,11 @@ enum SideMenuViewModel: Int, CaseIterable {
     }
     var view: some View {
         switch self {
-        case .myPlants: return MyPlants()
-        case .water: return WaterMeasure()
-        case .myTasks: return MyTasks()
-        case .calender: return Calendar()
-        case .shops: return ShopsView()
+        case .myPlants: return AnyView(MyPlants())
+        case .water: return AnyView(WaterMeasure())
+        case .myTasks: return AnyView(MyTasks())
+        case .calender: return AnyView(Calendar())
+        case .shops: return AnyView(ShopsView(shop: ShopViewModel(name: "", country: "", rate: 0)))
         }
     }
     

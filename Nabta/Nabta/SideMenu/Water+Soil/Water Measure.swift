@@ -15,25 +15,25 @@ struct WaterMeasure: View {
     
     var body: some View {
         ZStack {
-            Color.MaximumYellowRed
+            Color.white
                 .ignoresSafeArea()
             
             VStack {
                 Text("مقياس الماء")
                     .font(.system(size: 45, weight: .black))
-                    .foregroundColor(.white)
+                    .foregroundColor(.DarkSeaGreen)
                     .padding()
                 
                 Spacer()
                 
                 Text("كمية التربة")
                     .font(.system(size: 35))
-                    .foregroundColor(.DarkLava)
+                    .foregroundColor(.MaximumYellowRed)
                     .padding()
                     
                 TextField("لتر", text: $soilQ)
                     .frame(width: 200, height: 80)
-                    .background(Color.DarkLava.opacity(0.4))
+                    .background(Color.MaximumYellowRed.opacity(0.4))
                     .cornerRadius(20)
                     .foregroundColor(.white)
                     .font(.system(size: 30))

@@ -18,6 +18,7 @@ struct CategoriesView: View {
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 18, height: 18)
                 .padding(6)
+                .foregroundColor(.DarkLava)
                 .background(.white)
                 .clipShape(Circle())
             

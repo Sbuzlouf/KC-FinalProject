@@ -80,11 +80,22 @@ struct HomeView: View {
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 15) {
                         ForEach(SideMenuViewModel.allCases, id: \.self){ category in
-                            CategoriesView(viewModel: category)
+                            NavigationLink (destination: category.view,
+                                label: {
+                                CategoriesView(viewModel: category)
+                                })//: NAVLINK
                         }//: FOREACH
                     }//: HSTACK
                     .padding(.horizontal)
-                }
+                }//: 
+                
+                Text("الأكثر زيارة")
+                    .fontWeight(.medium)
+                    .font(.system(size: 25))
+                    .padding(.vertical, 20)
+                    .frame(width: 350, alignment: .trailing)
+                
+                
                 
                 Spacer()
             }//: VSTACK

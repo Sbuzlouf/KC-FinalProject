@@ -12,13 +12,13 @@ struct Calendar: View {
     
     var body: some View {
         ZStack {
-            Color.BurntSienna
+            Color.white
                 .ignoresSafeArea()
             
             VStack {
                 Text("التقويـــم")
                     .font(.system(size: 45, weight: .black))
-                    .foregroundColor(.MaximumYellowRed)
+                    .foregroundColor(.DarkSeaGreen)
                     .padding()
                 
                 Spacer()
@@ -27,9 +27,9 @@ struct Calendar: View {
                     Text("سبتمـبـــر")
                         .fontWeight(.medium)
                         .font(.system(size: 40))
-                        .foregroundColor(.MaximumYellowRed)
+                        .foregroundColor(.DarkLava)
                         .padding()
-                        .background(Color.DarkLava.opacity(0.7))
+                        .background(Color.DarkSeaGreen.opacity(0.7))
                         .cornerRadius(35)
                     
                     Divider()
@@ -59,8 +59,7 @@ struct Calendar_Previews: PreviewProvider {
 struct oneNum: View {
     
     @Binding var days: Int
-    @State var color: Color = .BurntSienna
-    @State var coLor: Color = .white
+    @State var color: Color = .white
     
     var body: some View {
         ZStack {
@@ -74,14 +73,12 @@ struct oneNum: View {
             
             Text("\(days)")
                 .font(.title)
-                .foregroundColor(coLor)
+                .foregroundColor(.DarkLava)
                 .onTapGesture {
-                    if color == .BurntSienna && coLor == .white{
+                    if color == .white{
                         color = .MaximumYellowRed
-                        coLor = .DarkLava
                     } else {
-                        color = .BurntSienna
-                        coLor = .white
+                        color = .white
                     }
                 }
         }

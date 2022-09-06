@@ -15,13 +15,12 @@ struct MyPlants: View {
     
     var body: some View {
         ZStack {
-            Color.DarkLava
-                .ignoresSafeArea()
+            Color.white
             
             VStack {
                 Text("نبـتاتــي")
                     .font(.system(size: 45, weight: .black))
-                    .foregroundColor(.white)
+                    .foregroundColor(.MaximumYellowRed)
                     .padding()
                 
                 ScrollView {
