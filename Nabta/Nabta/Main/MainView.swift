@@ -34,38 +34,6 @@ struct MainView: View {
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
         MainView()
-    }
-}
-
-struct HomeView: View {
-    
-    @Binding var isShowing: Bool
-    
-    var body: some View {
-        ZStack {
-            Color.white
             
-            VStack {
-                HStack {
-                    Button(action: {
-                        withAnimation(.spring()) {
-                            isShowing.toggle()
-                        }
-                    }, label: {
-                        Image(systemName: "list.bullet")
-                            .resizable()
-                            .scaledToFit()
-                            .foregroundColor(.black)
-                            .frame(width: 30, height: 30)
-                            
-                    })//: BUTTON
-                    
-                    Spacer()
-                }//: HSTACK
-                .padding()
-                
-                Spacer()
-            }//: VSTACK
-        }//: ZSATCK
     }
 }

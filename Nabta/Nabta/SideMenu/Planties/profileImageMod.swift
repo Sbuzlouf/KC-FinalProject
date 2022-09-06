@@ -8,7 +8,6 @@
 import SwiftUI
 
 extension Image {
-    
     func profileImageMod() -> some View {
         self
             .resizable()
@@ -17,6 +16,5 @@ extension Image {
             .background()
             .clipShape(Circle())
     }
-    
 }
 

@@ -25,10 +25,10 @@ struct SideMenuView: View {
                         label: {
                         SideMenuOptionView(viewModel: option)
                         })
-                }
+                }//: FOREACH
                 Spacer()
-            }
-        }
+            }//: VSTACK
+        }//: ZSTACK
         .navigationBarHidden(true)
     }
 }
