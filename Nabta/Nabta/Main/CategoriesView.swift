@@ -24,7 +24,7 @@ struct CategoriesView: View {
             
             Text(viewModel.list)
                 .font(.system(size: 20, weight: .bold))
-                .foregroundColor(.DarkLava)
+                .foregroundColor(.white)
         }//: HSTACK
         .padding(.vertical, 12)
         .padding(.horizontal)

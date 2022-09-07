@@ -27,9 +27,9 @@ struct Calendar: View {
                     Text("سبتمـبـــر")
                         .fontWeight(.medium)
                         .font(.system(size: 40))
-                        .foregroundColor(.DarkLava)
+                        .foregroundColor(.white)
                         .padding()
-                        .background(Color.DarkSeaGreen.opacity(0.7))
+                        .background(Color.DarkSeaGreen)
                         .cornerRadius(35)
                     
                     Divider()

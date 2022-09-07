@@ -27,30 +27,26 @@ struct WaterMeasure: View {
                 Spacer()
                 
                 Text("كمية التربة")
-                    .font(.system(size: 35))
-                    .foregroundColor(.DarkLava)
+                    .font(.system(size: 30))
                     .padding()
                     
                 TextField("لتر", text: $soilQ)
                     .frame(width: 200, height: 80)
-                    .background(Color.MaximumYellowRed.opacity(0.3))
+                    .background(Color.DarkSeaGreen.opacity(0.3))
                     .cornerRadius(20)
-                    .foregroundColor(.white)
+                    .foregroundColor(.DarkLava)
                     .font(.system(size: 30))
                 
-                Button(action: {
-                    ShowSheet.toggle()
-                }, label: {
-                    Text("حساب كمية التربة")
-                        .fontWeight(.semibold)
-                        .frame(width: 200, alignment: .trailing)
-                        .foregroundColor(.BurntSienna)
-                })//: BUTTON
-                .sheet(isPresented: $ShowSheet) {
-                    Soil_Measure()
-                }//: SHEET
-
-                Spacer()
+                Button {
+                    Result = Watercalc(s: Double(soilQ) ?? 0.0)
+                } label: {
+                    Image(systemName: "equal.circle.fill")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 50, height: 50)
+                        .padding(40)
+                        .foregroundColor(.DarkSeaGreen)
+                }//: BUTTON
                 
                 Text(String(format: "%.1f لتر", Result))
                     .font(.system(size: 35, weight: .medium))
@@ -59,26 +55,24 @@ struct WaterMeasure: View {
                 
                 Spacer()
                 
-                Button {
-                    Result = Watercalc(s: Double(soilQ) ?? 0.0)
-                } label: {
-                    HStack {
-                        Text("النتيجة")
-                            .font(.system(size: 35))
-                            .padding()
-                        
-                        Image(systemName: "plus")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 40, height: 40)
-                    }
-                     .frame(width: 170, height: 50)
-                     .padding()
-                     .background(Color.MaximumYellowRed)
-                     .cornerRadius(15)
-                     .foregroundColor(.white)
-                        
-                }//: BUTTON
+               
+                
+                Button(action: {
+                    ShowSheet.toggle()
+                }, label: {
+                    Text("اضغط لحساب كمية التربة")
+                        .fontWeight(.semibold)
+                        .foregroundColor(.white)
+                        .font(.system(size: 20))
+                        .frame(width: 160, height: 70)
+                        .background(Color.DarkSeaGreen)
+                        .cornerRadius(20)
+                })//: BUTTON
+                .sheet(isPresented: $ShowSheet) {
+                    Soil_Measure()
+                }//: SHEET
+                
+                Spacer()
             }.multilineTextAlignment(.center)
         }
         //: VSATCK

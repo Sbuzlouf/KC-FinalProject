@@ -25,12 +25,14 @@ struct MenuView: View {
                         .font(.largeTitle)
                         .frame(width: 40, height: 40)
                         .padding()
-                        .foregroundColor(.BurntSienna)
+                        .foregroundColor(.DarkSeaGreen)
                 })//: BUTTON
                 Spacer()
             }//: HSATCK
             
             Text(collection[0])
+                .font(.largeTitle)
+                .foregroundColor(.BurntSienna)
             
             ScrollView(.horizontal) {
                 HStack {
@@ -41,6 +43,8 @@ struct MenuView: View {
             .padding()
             
             Text(collection[1])
+                .font(.largeTitle)
+                .foregroundColor(.BurntSienna)
             
             ScrollView(.horizontal) {
                 HStack {
@@ -51,6 +55,8 @@ struct MenuView: View {
             
             VStack {
                 Text(collection[3])
+                    .font(.largeTitle)
+                    .foregroundColor(.BurntSienna)
                 
                 ScrollView(.horizontal) {
                     HStack {
@@ -68,6 +74,8 @@ struct MenuView: View {
             }//: VSTACK
             
             Text(collection[2])
+                .foregroundColor(.BurntSienna)
+                .font(.largeTitle)
             
             ScrollView(.horizontal) {
                 HStack {

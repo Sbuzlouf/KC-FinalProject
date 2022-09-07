@@ -21,7 +21,7 @@ enum SideMenuViewModel: Int, CaseIterable {
         case .water: return "مقيـاس المـاء"
         case .myTasks: return "مهـامــي"
         case .calender: return "التقويــم"
-        case .shops: return "محــلات"
+        case .shops: return "متاجــر"
         }
     }
     var images: String {

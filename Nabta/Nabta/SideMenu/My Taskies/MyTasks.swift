@@ -13,30 +13,38 @@ struct MyTasks: View {
     
     var body: some View {
         ZStack {
-            if listViewModel.items.isEmpty {
-                NoItemsView()
-                    .transition(AnyTransition.opacity.animation(.easeIn))
-            } else {
-                List {
-                    ForEach(listViewModel.items) { item in
-                        TaskRowView(item: item)
-                            .onTapGesture {
-                                withAnimation(.linear) {
-                                    listViewModel.updateItem(item: item)
+            VStack {
+                Text("مهامي")
+                    .font(.system(size: 45, weight: .black))
+                    .foregroundColor(.DarkSeaGreen)
+                    .padding()
+                
+                if listViewModel.items.isEmpty {
+                    NoItemsView()
+                        .transition(AnyTransition.opacity.animation(.easeIn))
+                } else {
+                    List {
+                        ForEach(listViewModel.items) { item in
+                            TaskRowView(item: item)
+                                .onTapGesture {
+                                    withAnimation(.linear) {
+                                        listViewModel.updateItem(item: item)
+                                    }
                                 }
-                            }
+                        }
+                        .onDelete(perform: listViewModel.deleteItem)
+                        .onMove(perform: listViewModel.moveItem)
                     }
-                    .onDelete(perform: listViewModel.deleteItem)
-                    .onMove(perform: listViewModel.moveItem)
+                    .listStyle(PlainListStyle())
                 }
-                .listStyle(PlainListStyle())
-            }
-        }
-        .navigationTitle("📝 مهامي")
+            }//: VSTACK
+        }//: ZSTACK
         .navigationBarItems(
-            leading: EditButton(),
+            leading: EditButton()
+                .foregroundColor(.DarkSeaGreen),
             trailing:
                 NavigationLink("إضافة", destination: AddView())
+                .foregroundColor(.DarkSeaGreen)
             )
     }
 

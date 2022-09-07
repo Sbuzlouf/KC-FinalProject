@@ -18,7 +18,7 @@ struct NoItemsView: View {
                     .font(.title)
                     .fontWeight(.semibold)
                 
-                Text("هل أنت شخص منتج؟ أعتقد أن عليك الضغط على إضافة وإضافة كم مهامك!")
+                Text("هل أنت شخص منتج؟ أعتقد أن عليك الضغط على الزر لإضافة مهامك!")
                     .padding(.bottom, 20)
                 
                 NavigationLink(

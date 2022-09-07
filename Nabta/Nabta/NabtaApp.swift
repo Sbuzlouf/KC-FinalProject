@@ -6,9 +6,14 @@
 //
 
 import SwiftUI
+import Firebase
 
 @main
 struct NabtaApp: App {
+    
+    init() {
+        FirebaseApp.configure()
+    }
     
     @StateObject var listViewModel: ListViewModel = ListViewModel()
     

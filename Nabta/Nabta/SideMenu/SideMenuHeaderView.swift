@@ -34,8 +34,7 @@ struct SideMenuHeaderView: View {
                         .clipShape(Circle())
                         .padding(.bottom, 16)
                     
-                    // username
-                    Text("Sumaya buzlouf")
+                    Text("Hello User")
                         .font(.system(size: 24, weight: .semibold))
                     
                     Spacer()

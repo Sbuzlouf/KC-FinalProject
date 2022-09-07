@@ -9,6 +9,8 @@ import SwiftUI
 
 struct SideMenuView: View {
     
+    @State var logOut = false
+    
     @Binding var isShowing: Bool
     
     var body: some View {
