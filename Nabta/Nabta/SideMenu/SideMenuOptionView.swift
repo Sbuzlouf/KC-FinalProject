@@ -21,10 +21,12 @@ struct SideMenuOptionView: View {
                     .font(.system(size: 14, weight: .semibold))
                 
                 Spacer()
-            }.foregroundColor(.white)
+            }//: HSTACK
+            .foregroundColor(.white)
                 .padding()
             Divider()
-        }.padding(.leading, 25)
+        }//: VSTACK
+        .padding(.leading, 25)
     }
 }
 

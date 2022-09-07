@@ -22,7 +22,7 @@ struct SideMenuHeaderView: View {
                     .frame(width: 32, height: 32)
                     .foregroundColor(.white)
                     .padding()
-            })
+            })//: BUTTON
             
             HStack {
                 VStack() {
@@ -40,12 +40,12 @@ struct SideMenuHeaderView: View {
                     
                     Spacer()
 
-                }.foregroundColor(.white)
+                }//: VSTACK
+                .foregroundColor(.white)
                     .padding()
                 Spacer()
-            }
-        }
-        
+            }//: HSTACK
+        }//: ZSTACK
     }
 }
 

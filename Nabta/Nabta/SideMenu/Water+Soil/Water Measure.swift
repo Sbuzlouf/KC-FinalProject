@@ -28,12 +28,12 @@ struct WaterMeasure: View {
                 
                 Text("كمية التربة")
                     .font(.system(size: 35))
-                    .foregroundColor(.MaximumYellowRed)
+                    .foregroundColor(.DarkLava)
                     .padding()
                     
                 TextField("لتر", text: $soilQ)
                     .frame(width: 200, height: 80)
-                    .background(Color.MaximumYellowRed.opacity(0.4))
+                    .background(Color.MaximumYellowRed.opacity(0.3))
                     .cornerRadius(20)
                     .foregroundColor(.white)
                     .font(.system(size: 30))
@@ -54,6 +54,7 @@ struct WaterMeasure: View {
                 
                 Text(String(format: "%.1f لتر", Result))
                     .font(.system(size: 35, weight: .medium))
+                    .foregroundColor(.DarkLava)
                     .padding()
                 
                 Spacer()
@@ -73,7 +74,7 @@ struct WaterMeasure: View {
                     }
                      .frame(width: 170, height: 50)
                      .padding()
-                     .background(Color.BurntSienna)
+                     .background(Color.MaximumYellowRed)
                      .cornerRadius(15)
                      .foregroundColor(.white)
                         

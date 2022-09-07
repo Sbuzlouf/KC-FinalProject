@@ -17,7 +17,7 @@ struct Soil_Measure: View {
     
     var body: some View {
         ZStack {
-            Color.DarkLava
+            Color.DarkSeaGreen.opacity(0.7)
                 .ignoresSafeArea()
             
             VStack {
@@ -40,9 +40,9 @@ struct Soil_Measure: View {
                 
                 TextField("سم", text: $Diameter)
                     .frame(width: 200, height: 60)
-                    .background(Color.MaximumYellowRed.opacity(0.4))
+                    .background(.white.opacity(0.4))
                     .cornerRadius(20)
-                    .foregroundColor(.white)
+                    .foregroundColor(.DarkLava)
                 
                 Text("ارتفاع الأصيص")
                     .font(.system(size: 30))
@@ -50,9 +50,9 @@ struct Soil_Measure: View {
                 
                 TextField("سم", text: $height)
                     .frame(width: 200, height: 60)
-                    .background(Color.MaximumYellowRed.opacity(0.4))
+                    .background(.white.opacity(0.4))
                     .cornerRadius(20)
-                    .foregroundColor(.white)
+                    .foregroundColor(.DarkLava)
                 
                 Button {
                     result = Soilcalc(d: Double(Diameter) ?? 0.0, h: Double(height) ?? 0.0)
@@ -62,11 +62,12 @@ struct Soil_Measure: View {
                         .scaledToFit()
                         .frame(width: 50, height: 50)
                         .padding(40)
-                        .foregroundColor(.MaximumYellowRed)
+                        .foregroundColor(.DarkSeaGreen)
                 }//: BUTTON
 
                 Text(String(format: "%.1f لتر", result))
                     .font(.system(size: 35))
+                    .foregroundColor(.DarkLava)
                     .padding()
                 
                 
