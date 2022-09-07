@@ -117,7 +117,6 @@
 				2161EECA28BDBF55005B60B5 /* ContentView.swift */,
 				6F132C3228C502B500E4006C /* Main */,
 				217DA20528BE1E0D000CC9B8 /* SideMenu */,
-				217DA20428BE1DF6000CC9B8 /* Login */,
 				2161EED828BDC16E005B60B5 /* Extentions */,
 				2161EECC28BDBF57005B60B5 /* Assets.xcassets */,
 				2161EED628BDC124005B60B5 /* Colors.xcassets */,
@@ -142,13 +141,6 @@
 				2161EED928BDC1A9005B60B5 /* Color+Extentions.swift */,
 			);
 			path = Extentions;
-			sourceTree = "<group>";
-		};
-		217DA20428BE1DF6000CC9B8 /* Login */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Login;
 			sourceTree = "<group>";
 		};
 		217DA20528BE1E0D000CC9B8 /* SideMenu */ = {
