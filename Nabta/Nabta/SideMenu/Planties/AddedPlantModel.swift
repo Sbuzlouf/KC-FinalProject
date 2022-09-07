@@ -14,6 +14,3 @@ struct AddedPlantModel: Identifiable {
     var image: UIImage
 }
 
-var NewPlant = [
-    AddedPlantModel(name: "", image: UIImage())
-]

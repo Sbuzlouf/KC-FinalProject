@@ -15,7 +15,7 @@ struct NewPlantView: View {
     @State var openCameraRoll = false
     @State var imageSelected = UIImage()
     
-    var AddedPlant: AddedPlantModel
+    @Binding var newPlant: [AddedPlantModel]
        
     @Environment(\.presentationMode) var presentationMode
     
@@ -89,7 +89,8 @@ struct NewPlantView: View {
                 Spacer()
                     
                 Button(action: {
-                    NewPlant.append(AddedPlantModel(name: newName, image: imageSelected))
+                    newPlant.append(AddedPlantModel(name: newName, image: imageSelected))
+                    presentationMode.wrappedValue.dismiss()
                 }, label: {
                     Image(systemName: "plus.circle.fill")
                         .resizable()
@@ -107,6 +108,6 @@ struct NewPlantView: View {
 
 struct NewPlantView_Previews: PreviewProvider {
     static var previews: some View {
-        NewPlantView(AddedPlant: AddedPlantModel(name: "", image: UIImage()))
+        NewPlantView(newPlant: .constant([AddedPlantModel(name: "", image: UIImage())]))
     }
 }

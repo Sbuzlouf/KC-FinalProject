@@ -14,7 +14,10 @@ struct MyPlants: View {
     @State var Plants = [""]
     var Name: String
     var iMage: UIImage
-    
+    @State var NewPlant = [
+        AddedPlantModel(name: "", image: UIImage())
+    ]
+
     
     var body: some View {
         ZStack {
@@ -30,11 +33,15 @@ struct MyPlants: View {
                     ForEach(NewPlant){ Item in
                         VStack {
                             Text(Item.name)
+                                .font(.system(size: 35, weight: .medium))
+                                .foregroundColor(.DarkLava)
+                                .padding()
                             
                             Image(uiImage: Item.image)
                                 .resizable()
-                                .scaledToFit()
-                                .frame(width: 250, height: 250)
+                                .frame(width: 200, height: 200)
+                                .clipShape(Circle())
+                                .background()
                                 .clipShape(Circle())
                                 .padding()
                         }//: VSTACK
@@ -54,7 +61,7 @@ struct MyPlants: View {
                         .padding()
                 })//: BUTTON
                 .fullScreenCover(isPresented: $showSheet) {
-                    NewPlantView(AddedPlant: AddedPlantModel(name: Name, image: iMage))
+                    NewPlantView(newPlant: $NewPlant)
                 }//: SCREENCOVER
             }//: VSTACK
         }//: ZSTACK
