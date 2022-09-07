@@ -12,23 +12,26 @@ struct MyPlants: View {
     
     @State var showSheet = false
     @State var Plants = [""]
+    var Name: String
+    var iMage: UIImage
+    
     
     var body: some View {
         ZStack {
-            Color.white
+            Color.white.ignoresSafeArea()
             
             VStack {
                 Text("نبـتاتــي")
                     .font(.system(size: 45, weight: .black))
-                    .foregroundColor(.MaximumYellowRed)
+                    .foregroundColor(.DarkSeaGreen)
                     .padding()
                 
                 ScrollView {
-                    ForEach(Plants, id: \.self){ Item in
+                    ForEach(NewPlant){ Item in
                         VStack {
-                            Text(Item)
+                            Text(Item.name)
                             
-                            Image(Item)
+                            Image(uiImage: Item.image)
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 250, height: 250)
@@ -47,21 +50,19 @@ struct MyPlants: View {
                         .resizable()
                         .scaledToFit()
                         .frame(width: 70, height: 70)
-                        .foregroundColor(.DarkSeaGreen)
+                        .foregroundColor(.MaximumYellowRed)
                         .padding()
                 })//: BUTTON
                 .fullScreenCover(isPresented: $showSheet) {
-                   NewPlantView()
+                    NewPlantView(AddedPlant: AddedPlantModel(name: Name, image: iMage))
                 }//: SCREENCOVER
-                
-                
-            }
-        }//: VSTACK
+            }//: VSTACK
+        }//: ZSTACK
     }
 }
 
 struct MyPlants_Previews: PreviewProvider {
     static var previews: some View {
-        MyPlants()
+        MyPlants(Name: "", iMage: UIImage())
     }
 }

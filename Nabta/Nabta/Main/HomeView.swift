@@ -95,6 +95,41 @@ struct HomeView: View {
                     .padding(.vertical, 20)
                     .frame(width: 350, alignment: .trailing)
                 
+                ScrollView {
+                    ForEach(Shops){ shop in
+                        HStack {
+                            Spacer()
+                            VStack {
+                                Text(shop.name)
+                                    .font(.title)
+                                    .frame(width: 150, alignment: .trailing)
+                                
+                                Text(shop.country)
+                                    .frame(width: 150, alignment: .trailing)
+                                    .foregroundColor(.gray)
+                                    .padding(.trailing)
+                                
+                                HStack {
+                                    Text(String(format: "%.1f", shop.rate))
+                                        .frame(width: 100, alignment: .trailing)
+                                    
+                                    Image(systemName: "star.fill")
+                                        .foregroundColor(.MaximumYellowRed)
+                                }//: HSTACK
+                            }//: VSTACK
+                            
+                            Image(shop.name)
+                                .resizable()
+                                .scaledToFit()
+                                .cornerRadius(20)
+                                .frame(width: 90, height: 90)
+                                .shadow(radius: 5)
+                                .padding()
+                            
+                        }//: HSTACK
+                            .padding()
+                    }//: FOREACH
+                }//: SCROLLVIEW
                 
                 
                 Spacer()

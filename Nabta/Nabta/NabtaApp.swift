@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct NabtaApp: App {
+    
+    @StateObject var listViewModel: ListViewModel = ListViewModel()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(ListViewModel())
         }
     }
 }

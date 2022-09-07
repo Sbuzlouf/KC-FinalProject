@@ -35,7 +35,7 @@ enum SideMenuViewModel: Int, CaseIterable {
     }
     var view: some View {
         switch self {
-        case .myPlants: return AnyView(MyPlants())
+        case .myPlants: return AnyView(MyPlants(Name: "", iMage: UIImage()))
         case .water: return AnyView(WaterMeasure())
         case .myTasks: return AnyView(MyTasks())
         case .calender: return AnyView(Calendar())

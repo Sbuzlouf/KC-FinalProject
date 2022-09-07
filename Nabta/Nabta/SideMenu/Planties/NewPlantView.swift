@@ -14,6 +14,8 @@ struct NewPlantView: View {
     @State var changeProfileImage = false
     @State var openCameraRoll = false
     @State var imageSelected = UIImage()
+    
+    var AddedPlant: AddedPlantModel
        
     @Environment(\.presentationMode) var presentationMode
     
@@ -34,6 +36,7 @@ struct NewPlantView: View {
                 })//: BUTTON
                     Spacer()
                 }//: HSATCK
+               
                 Spacer()
                 
                 Text("صورة المزيونة:")
@@ -51,12 +54,11 @@ struct NewPlantView: View {
                             Image(uiImage: imageSelected)
                                 .profileImageMod()
                         } else {
-// crop the photo
-                            Image("Nabta")
+                            Image("icon")
                                 .profileImageMod()
                         }
-                        
-                })//: BUTTON
+                    })//: BUTTON
+                  
                     Image(systemName: "plus")
                         .frame(width: 30, height: 30)
                         .foregroundColor(.white)
@@ -76,7 +78,7 @@ struct NewPlantView: View {
                     .frame(width: 250, height: 40, alignment: .trailing)
                     .padding(.top)
                 
-                TextField("", text: $newName)
+                TextField("تاج الراس؟", text: $newName)
                     .frame(width: 250, height: 30)
                     .padding()
                     .background(.white)
@@ -85,9 +87,9 @@ struct NewPlantView: View {
                     .multilineTextAlignment(.trailing)
 
                 Spacer()
-
-                Button(action: {
                     
+                Button(action: {
+                    NewPlant.append(AddedPlantModel(name: newName, image: imageSelected))
                 }, label: {
                     Image(systemName: "plus.circle.fill")
                         .resizable()
@@ -105,6 +107,6 @@ struct NewPlantView: View {
 
 struct NewPlantView_Previews: PreviewProvider {
     static var previews: some View {
-        NewPlantView()
+        NewPlantView(AddedPlant: AddedPlantModel(name: "", image: UIImage()))
     }
 }

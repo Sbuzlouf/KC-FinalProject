@@ -21,7 +21,13 @@
 		6F132C3E28C5196900E4006C /* MyPlants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F132C3D28C5196900E4006C /* MyPlants.swift */; };
 		6F132C4428C5389600E4006C /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F132C4328C5389600E4006C /* ImagePicker.swift */; };
 		6F132C4628C53AE600E4006C /* profileImageMod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F132C4528C53AE600E4006C /* profileImageMod.swift */; };
+		6F3EF73328C8E02100267A6B /* BackHidden.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3EF73228C8E02100267A6B /* BackHidden.swift */; };
 		6F402C3F28C882B5005F83FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F402C3E28C882B5005F83FE /* LaunchScreen.storyboard */; };
+		6F402C4128C89CF0005F83FE /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F402C4028C89CF0005F83FE /* ItemModel.swift */; };
+		6F402C4328C89D09005F83FE /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F402C4228C89D09005F83FE /* ListViewModel.swift */; };
+		6F402C4528C89D7F005F83FE /* TaskRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F402C4428C89D7F005F83FE /* TaskRowView.swift */; };
+		6F402C4728C89D91005F83FE /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F402C4628C89D91005F83FE /* AddView.swift */; };
+		6F402C4928C89DA4005F83FE /* NoItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F402C4828C89DA4005F83FE /* NoItemsView.swift */; };
 		6F63693028C618C900865233 /* NewPlantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F63692F28C618C900865233 /* NewPlantView.swift */; };
 		6F63693628C61EF800865233 /* Water Measure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F63693528C61EF800865233 /* Water Measure.swift */; };
 		6F63693828C61F2400865233 /* Soil Measure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F63693728C61F2400865233 /* Soil Measure.swift */; };
@@ -32,6 +38,7 @@
 		6F78132328C7DE8100FD2890 /* ShopViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F78132228C7DE8100FD2890 /* ShopViewModel.swift */; };
 		6FB0F54B28C7792900FCA6A0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB0F54A28C7792900FCA6A0 /* HomeView.swift */; };
 		6FB0F55528C787F700FCA6A0 /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB0F55428C787F700FCA6A0 /* CategoriesView.swift */; };
+		6FE20FCA28C8B9A300A29C4C /* AddedPlantModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE20FC928C8B9A300A29C4C /* AddedPlantModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,7 +57,13 @@
 		6F132C3D28C5196900E4006C /* MyPlants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlants.swift; sourceTree = "<group>"; };
 		6F132C4328C5389600E4006C /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		6F132C4528C53AE600E4006C /* profileImageMod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileImageMod.swift; sourceTree = "<group>"; };
+		6F3EF73228C8E02100267A6B /* BackHidden.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackHidden.swift; sourceTree = "<group>"; };
 		6F402C3E28C882B5005F83FE /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6F402C4028C89CF0005F83FE /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		6F402C4228C89D09005F83FE /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		6F402C4428C89D7F005F83FE /* TaskRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRowView.swift; sourceTree = "<group>"; };
+		6F402C4628C89D91005F83FE /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		6F402C4828C89DA4005F83FE /* NoItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoItemsView.swift; sourceTree = "<group>"; };
 		6F63692F28C618C900865233 /* NewPlantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlantView.swift; sourceTree = "<group>"; };
 		6F63693528C61EF800865233 /* Water Measure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Water Measure.swift"; sourceTree = "<group>"; };
 		6F63693728C61F2400865233 /* Soil Measure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Soil Measure.swift"; sourceTree = "<group>"; };
@@ -61,6 +74,7 @@
 		6F78132228C7DE8100FD2890 /* ShopViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewModel.swift; sourceTree = "<group>"; };
 		6FB0F54A28C7792900FCA6A0 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		6FB0F55428C787F700FCA6A0 /* CategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
+		6FE20FC928C8B9A300A29C4C /* AddedPlantModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddedPlantModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +166,7 @@
 				6F132C3328C502C600E4006C /* MainView.swift */,
 				6FB0F54A28C7792900FCA6A0 /* HomeView.swift */,
 				6FB0F55428C787F700FCA6A0 /* CategoriesView.swift */,
+				6F3EF73228C8E02100267A6B /* BackHidden.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -162,6 +177,7 @@
 				6F132C3D28C5196900E4006C /* MyPlants.swift */,
 				6F63692F28C618C900865233 /* NewPlantView.swift */,
 				6F132C4328C5389600E4006C /* ImagePicker.swift */,
+				6FE20FC928C8B9A300A29C4C /* AddedPlantModel.swift */,
 				6F132C4528C53AE600E4006C /* profileImageMod.swift */,
 			);
 			path = Planties;
@@ -198,6 +214,11 @@
 			isa = PBXGroup;
 			children = (
 				6F63693928C6308C00865233 /* MyTasks.swift */,
+				6F402C4828C89DA4005F83FE /* NoItemsView.swift */,
+				6F402C4428C89D7F005F83FE /* TaskRowView.swift */,
+				6F402C4628C89D91005F83FE /* AddView.swift */,
+				6F402C4228C89D09005F83FE /* ListViewModel.swift */,
+				6F402C4028C89CF0005F83FE /* ItemModel.swift */,
 			);
 			path = "My Taskies";
 			sourceTree = "<group>";
@@ -278,14 +299,18 @@
 				217DA20928BE2160000CC9B8 /* SideMenuHeaderView.swift in Sources */,
 				6F63693A28C6308C00865233 /* MyTasks.swift in Sources */,
 				6F63693C28C635E200865233 /* Calendar.swift in Sources */,
+				6F402C4128C89CF0005F83FE /* ItemModel.swift in Sources */,
 				6F63693828C61F2400865233 /* Soil Measure.swift in Sources */,
 				6F78131F28C7CFE100FD2890 /* MenuView.swift in Sources */,
 				6F132C3428C502C600E4006C /* MainView.swift in Sources */,
 				2161EECB28BDBF55005B60B5 /* ContentView.swift in Sources */,
 				6FB0F55528C787F700FCA6A0 /* CategoriesView.swift in Sources */,
+				6F402C4528C89D7F005F83FE /* TaskRowView.swift in Sources */,
 				2161EEC928BDBF55005B60B5 /* NabtaApp.swift in Sources */,
+				6F3EF73328C8E02100267A6B /* BackHidden.swift in Sources */,
 				6F132C3E28C5196900E4006C /* MyPlants.swift in Sources */,
 				217DA20D28BE21AF000CC9B8 /* SideMenuViewModel.swift in Sources */,
+				6FE20FCA28C8B9A300A29C4C /* AddedPlantModel.swift in Sources */,
 				217DA20728BE2141000CC9B8 /* SideMenuView.swift in Sources */,
 				6F132C4428C5389600E4006C /* ImagePicker.swift in Sources */,
 				6F63693E28C67D5C00865233 /* ShopsView.swift in Sources */,
@@ -293,6 +318,9 @@
 				6F63693028C618C900865233 /* NewPlantView.swift in Sources */,
 				2161EEDA28BDC1A9005B60B5 /* Color+Extentions.swift in Sources */,
 				217DA20B28BE2183000CC9B8 /* SideMenuOptionView.swift in Sources */,
+				6F402C4328C89D09005F83FE /* ListViewModel.swift in Sources */,
+				6F402C4928C89DA4005F83FE /* NoItemsView.swift in Sources */,
+				6F402C4728C89D91005F83FE /* AddView.swift in Sources */,
 				6F78132328C7DE8100FD2890 /* ShopViewModel.swift in Sources */,
 				6FB0F54B28C7792900FCA6A0 /* HomeView.swift in Sources */,
 			);
